@@ -1,0 +1,74 @@
+This is BibTeX, Version 0.99d (TeX Live 2023)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: main.aux
+The style file: plain.bst
+Database file #1: references.bib
+Warning--empty publisher in alahmad_availability-aware_2018
+Warning--empty year in alahmad_availability-aware_2018
+Warning--empty journal in avgerinou_trends_2017
+Warning--empty year in avgerinou_trends_2017
+Warning--empty publisher in barna_delivering_2017
+Warning--empty year in barna_delivering_2017
+Warning--empty year in beloglazov_energy_2010
+Warning--empty journal in bui_energy_2017
+Warning--empty year in bui_energy_2017
+Warning--empty year in carrega_energy-aware_2017
+Warning--empty journal in dabbagh_energy-efficient_2015
+Warning--empty year in dabbagh_energy-efficient_2015
+Warning--empty journal in hameed_survey_2016
+Warning--empty year in hameed_survey_2016
+Warning--empty journal in hu_concurrent_2020
+Warning--empty year in hu_concurrent_2020
+Warning--empty journal in kumar_renewable_2019
+Warning--empty year in kumar_renewable_2019
+Warning--empty booktitle in li_sla-aware_2018
+Warning--empty year in li_sla-aware_2018
+Warning--empty year in piraghaj_framework_2015
+Warning--empty publisher in shi_energy-aware_2018
+Warning--empty year in shi_energy-aware_2018
+Warning--empty publisher in tan_hybrid_2019
+Warning--empty year in tan_hybrid_2019
+Warning--empty journal in xu_energy_2016
+Warning--empty year in xu_energy_2016
+You've used 18 entries,
+            2118 wiz_defined-function locations,
+            585 strings with 7639 characters,
+and the built_in function-call counts, 6952 in all, are:
+= -- 642
+> -- 403
+< -- 4
++ -- 161
+- -- 140
+* -- 556
+:= -- 1133
+add.period$ -- 55
+call.type$ -- 18
+change.case$ -- 120
+chr.to.int$ -- 0
+cite$ -- 45
+duplicate$ -- 240
+empty$ -- 495
+format.name$ -- 140
+if$ -- 1408
+int.to.chr$ -- 0
+int.to.str$ -- 18
+missing$ -- 21
+newline$ -- 90
+num.names$ -- 36
+pop$ -- 187
+preamble$ -- 1
+purify$ -- 106
+quote$ -- 0
+skip$ -- 149
+stack$ -- 0
+substring$ -- 392
+swap$ -- 46
+text.length$ -- 4
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 64
+warning$ -- 27
+while$ -- 63
+width$ -- 20
+write$ -- 168
+(There were 27 warnings)

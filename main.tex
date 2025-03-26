@@ -1,0 +1,74 @@
+\documentclass[a4paper,12pt]{article}
+% Package to make citations superscrit with brackets
+\usepackage[super,square]{natbib}
+% Package to change margin size
+\usepackage{anysize}
+\marginsize{2cm}{2cm}{1cm}{2cm}
+% Package to make headers
+\usepackage{fancyhdr}
+\renewcommand{\headrulewidth}{0pt}
+% Package for highligths
+\usepackage{soul}
+% Colors for the references links
+\usepackage[dvipsnames]{xcolor}
+\usepackage{graphicx}
+\usepackage{float}
+% Package to link references
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=black,
+    citecolor=CadetBlue,
+    filecolor=CadetBlue,      
+    urlcolor=CadetBlue,
+}
+% Package for lorem ipsum
+\usepackage{lipsum}
+% Package for multicolumn
+\usepackage{multicol}
+% Package for removing paragraph identations
+\usepackage{parskip}
+\setlength\columnsep{18pt}
+
+% Sets bastract
+\renewenvironment{abstract}
+ {\par\noindent\textbf{\abstractname}\ \ignorespaces \\}
+ {\par\noindent\medskip}
+
+
+
+ 
+\begin{document}
+% Makes header
+\pagestyle{fancy}
+\thispagestyle{empty}
+\fancyhead[R]{\textit{M1 CSA}}
+\fancyhead[L]{}
+% Makes footnotes with an asterisk
+\renewcommand*{\thefootnote}{\fnsymbol{footnote}}
+\begin{center}
+\Large{\textbf{Survey on Energy Consumption Optimization Approach in Container Based Cloud Environments}}
+\vspace{0.4cm}
+\normalsize
+\\ Francesco Pace Napoleone, Marian-Catalin Mutu-Costan, Ryzhuk Ihor, Ewan Soueidan \\
+\vspace{0.1cm}
+\textit{Université Paul Sabatier III Toulouse}
+\medskip
+\normalsize
+\end{center}
+{\color{gray}\hrule}
+\vspace{0.4cm}
+\begin{abstract}
+\input{./abstract.tex}
+\end{abstract}
+{\color{gray}\hrule}
+\medskip
+\input{./sections/1_intro.tex}
+\input{./sections/2_section.tex}
+\input{./sections/3_section.tex}
+\input{./sections/4_section.tex}
+\input{./sections/5_conclusion.tex}
+\bibliographystyle{plain}
+\bibliography{references} % Load references from references.bib
+
+\end{document}

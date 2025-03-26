@@ -1,0 +1,57 @@
+\begin{multicols}{2}
+\tableofcontents
+\section{Introduction}
+Cloud computing evolved to support scalable platform usage, moving from single-file applications to client/server 
+architectures with monolithic backends, then to microservices with containers, and now transitioning to micro-frontends. 
+Containers run directly on the host using Linux CGroups, bypassing the hypervisor overhead inherent in VMs (e.g., 
+Proxmox, VMWare), which allows for full utilization of host CPU resources and simplifies telemetry monitoring. 
+This lightweight nature is evident in Docker files that simply copy files and run builds, making containers easier to integrate 
+into CI/CD pipelines.
+
+However, this increased reliance on cloud-based infrastructures has led to a significant rise in energy 
+consumption. In 2006, the electricity costs for IT infrastructures in the United States alone were 
+estimated at \$ 4.5 billion, with projections to double by 2011\cite{beloglazov_energy_2010}. Energy 
+consumption optimization has since become a critical concern, especially as cloud data centers now account 
+for approximately 1-1.5\% of global electricity use\cite{IEADataCentres}. Despite efficiency improvements, the 
+demand for digital services continues to grow, pushing the need for more sustainable solutions.
+
+Early research focused on heuristic-based approaches to optimize virtual machine (VM) placement, achieving 
+energy savings of up to 83\% while maintaining only a 1.1\% service level agreement (SLA) violation 
+rate\cite{beloglazov_energy_2010}. More recently, research has shifted from VM-based allocation towards 
+containerized environments, where energy efficiency is influenced by scheduling strategies, workload 
+distribution, and infrastructure optimizations. Studies indicate that modern cloud providers, including 
+Amazon, Microsoft, Google, and Meta, have doubled their energy consumption between 2017 and 2021, 
+reaching 72 TWh in 2021\cite{masanet_2020, hintemann_2022, IEADataCentres}.
+
+Recent research has begun to explore renewable energy-aware strategies to further optimize cloud infrastructures. A notable study proposed a renewable energy-based multi-indexed job classification and scheduling scheme using containers for sustainability in cloud data centers\cite{kumar_renewable_2019}. The scheme focuses on transferring workloads to data centers with sufficient renewable energy, incorporating energy-efficient server selection and container consolidation. The results showed that the proposed method achieved 15\%, 28\%, and 10.55\% higher energy savings compared to existing approaches, demonstrating the potential for significantly reducing energy consumption while enhancing sustainability.
+
+The paper ``Survey on Energy Consumption Optimization Approach in Container Based Cloud Environments'' 
+further highlights that containerization not only drives scalability and 
+reproducibility but also plays a crucial role in optimizing energy consumption. It 
+explores strategies for efficient resource allocation, reducing power overhead, and 
+ensuring that the benefits of container-based deployments extend beyond performance 
+to sustainability in cloud infrastructures.
+
+In this work, we present a state-of-the-art review on Energy Consumption Optimization Approaches in Container-Based Cloud Environments. Our survey of the available literature—predominantly spanning from 2010 to 2020—reveals that foundational research primarily focused on energy measurement, basic optimization strategies, and energy visualization techniques\cite{beloglazov_energy_2010}.
+
+Early contributions, such as those by Beloglazov and Buyya\cite{beloglazov_energy_2010}, as well as 
+Piraghaj et al.\cite{piraghaj_framework_2015}, laid the groundwork for dynamic resource allocation and 
+energy-efficient container consolidation. Later advancements introduced more sophisticated container 
+scheduling mechanisms, including availability-aware scheduling\cite{alahmad_availability-aware_2018}, 
+concurrent scheduling in heterogeneous clusters\cite{hu_concurrent_2020}, and hybrid AI-driven resource 
+allocation\cite{tan_hybrid_2019}.
+
+In parallel, energy-efficient resource management techniques gained prominence, incorporating renewable 
+energy-aware scheduling\cite{kumar_renewable_2019}, optimization-based consolidation methods\cite{shi_energy-aware_2018, piraghaj_framework_2015}, 
+and brownout-based scheduling strategies\cite{xu_energy_2016}. Several studies further explored 
+predictive optimization and SLA-aware provisioning frameworks to enhance energy 
+efficiency\cite{dabbagh_energy-efficient_2015, hameed_survey_2016, li_sla-aware_2018, bui_energy_2017, 
+carrega_energy-aware_2017}.
+
+Beyond optimization techniques, researchers have also examined broader energy consumption trends and policy implications\cite{avgerinou_trends_2017}, reflecting the increasing emphasis on sustainability in cloud computing. Additionally, efforts in DevOps-driven elastic container management have contributed to improving the adaptability and efficiency of containerized cloud applications\cite{barna_delivering_2017}.
+
+Although these prior works have significantly advanced the field, our review highlights an evolving trend toward more integrated and user-centric energy management strategies, as reflected in recent data on energy consumption in cloud environments\cite{masanet_2020, hintemann_2022, IEADataCentres}. This synthesis not only underscores the robust foundation established by past research but also identifies critical areas for achieving digital sufficiency and sustainable cloud infrastructures.
+
+\end{multicols}
+
+\newpage

@@ -1,0 +1,90 @@
+\begin{thebibliography}{10}
+
+\bibitem{alahmad_availability-aware_2018}
+Yanal Alahmad, Tariq Daradkeh, and Anjali Agarwal.
+\newblock {\em Availability-Aware Container Scheduler for Application Services in Cloud}.
+
+\bibitem{avgerinou_trends_2017}
+Maria Avgerinou, Paolo Bertoldi, and Luca Castellazzi.
+\newblock Trends in data centre energy consumption under the european code of conduct for data centre energy efficiency.
+\newblock 10(10):1470.
+
+\bibitem{barna_delivering_2017}
+Cornel Barna, Hamzeh Khazaei, Marios Fokaefs, and Marin Litoiu.
+\newblock {\em Delivering Elastic Containerized Cloud Applications to Enable {DevOps}}.
+
+\bibitem{beloglazov_energy_2010}
+Anton Beloglazov and Rajkumar Buyya.
+\newblock Energy efficient allocation of virtual machines in cloud data centers.
+\newblock In {\em 2010 10th {IEEE}/{ACM} International Conference on Cluster, Cloud and Grid Computing}, pages 577--578. {IEEE}.
+
+\bibitem{bui_energy_2017}
+Dinh-Mao Bui, {YongIk} Yoon, Eui-Nam Huh, {SungIk} Jun, and Sungyoung Lee.
+\newblock Energy efficiency for cloud computing system based on predictive optimization.
+\newblock 102:103--114.
+
+\bibitem{carrega_energy-aware_2017}
+Alessandro Carrega and Matteo Repetto.
+\newblock Energy-aware consolidation scheme for data center cloud applications.
+\newblock In {\em 2017 29th International Teletraffic Congress ({ITC} 29)}, pages 24--29. {IEEE}.
+
+\bibitem{dabbagh_energy-efficient_2015}
+Mehiar Dabbagh, Bechir Hamdaoui, Mohsen Guizani, and Ammar Rayes.
+\newblock Energy-efficient resource allocation and provisioning framework for cloud data centers.
+\newblock 12(3):377--391.
+
+\bibitem{hameed_survey_2016}
+Abdul Hameed, Alireza Khoshkbarforoushha, Rajiv Ranjan, Prem~Prakash Jayaraman, Joanna Kolodziej, Pavan Balaji, Sherali Zeadally, Qutaibah~Marwan Malluhi, Nikos Tziritas, Abhinav Vishnu, Samee~U. Khan, and Albert Zomaya.
+\newblock A survey and taxonomy on energy efficient resource allocation techniques for cloud computing systems.
+\newblock 98(7):751--774.
+
+\bibitem{hintemann_2022}
+Ralph Hintemann and Simon Hinterholzer.
+\newblock Cloud computing drives the growth of the data center industry and its energy consumption.
+\newblock {\em Data centers}, 2022.
+
+\bibitem{hu_concurrent_2020}
+Yang Hu, Huan Zhou, Cees de~Laat, and Zhiming Zhao.
+\newblock Concurrent container scheduling on heterogeneous clusters with multi-resource constraints.
+\newblock 102:562--573.
+
+\bibitem{IEADataCentres}
+{IEA}.
+\newblock Data centres \& networks.
+\newblock \url{https://www.iea.org/energy-system/buildings/data-centres-and-data-transmission-networks}.
+\newblock Accessed: 2025-03-25.
+
+\bibitem{kumar_renewable_2019}
+Neeraj Kumar, Gagangeet~Singh Aujla, Sahil Garg, Kuljeet Kaur, Rajiv Ranjan, and Saurabh~Kumar Garg.
+\newblock Renewable energy-based multi-indexed job classification and container management scheme.
+\newblock 15(5):2947--2957.
+
+\bibitem{li_sla-aware_2018}
+Lianpeng Li, Jian Dong, Decheng Zuo, and {JIaxi} Liu.
+\newblock {SLA}-aware and energy-efficient {VM} consolidation in cloud data centers using host states naive bayesian prediction model.
+\newblock pages 80--87. {IEEE} Computer Society.
+
+\bibitem{masanet_2020}
+Eric Masanet, Arman Shehabi, Nuoa Lei, Sarah Smith, and Jonathan Koomey.
+\newblock Recalibrating global data center energy-use estimates.
+\newblock {\em Science}, 367(6481):984--986, 2020.
+
+\bibitem{piraghaj_framework_2015}
+Sareh~Fotuhi Piraghaj, Amir~Vahid Dastjerdi, Rodrigo~N. Calheiros, and Rajkumar Buyya.
+\newblock A framework and algorithm for energy efficient container consolidation in cloud data centers.
+\newblock In {\em 2015 {IEEE} International Conference on Data Science and Data Intensive Systems}, pages 368--375. {IEEE}.
+
+\bibitem{shi_energy-aware_2018}
+Tao Shi, Hui Ma, and Gang Chen.
+\newblock {\em Energy-Aware Container Consolidation Based on {PSO} in Cloud Data Centers}.
+
+\bibitem{tan_hybrid_2019}
+Boxiong Tan, Hui Ma, and Yi~Mei.
+\newblock {\em A Hybrid Genetic Programming Hyper-Heuristic Approach for Online Two-level Resource Allocation in Container-based Clouds}.
+
+\bibitem{xu_energy_2016}
+Minxian Xu, Amir~Vahid Dastjerdi, and Rajkumar Buyya.
+\newblock Energy efficient scheduling of cloud application components with brownout.
+\newblock 1(2):40--53.
+
+\end{thebibliography}
