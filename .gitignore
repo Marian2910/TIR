@@ -1,0 +1,29 @@
+# LaTeX auxiliary and intermediate files
+*.aux
+*.bbl
+*.blg
+*.brf
+*.idx
+*.ind
+*.lof
+*.log
+*.lot
+*.fdb_latexmk
+*.out
+*.toc
+*.nav
+*.snm
+*.vrb
+
+# Temporary and backup files
+*.bak
+*.synctex.gz
+*.fls
+*.fdb_latexmk
+*.xdv
+
+# Output files
+*.pdf
+*.dvi
+*.ps
+*.eps
