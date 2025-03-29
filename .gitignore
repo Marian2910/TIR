@@ -27,3 +27,4 @@
 *.dvi
 *.ps
 *.eps
+.DS_Store
