@@ -21,14 +21,7 @@ accelerated using the Fast Fourier Transform to mitigate GPR's computational com
 Additionally, a convex optimization-based migration strategy was employed.
 These enhancements resulted in a 35\% energy efficiency improvement over heuristic methods, with only a 15\% latency tradeoff.
 
-% \subsection{Containers Rise}
-% Containers began replacing VMs for lightweight virtualization. Initial efforts focused on container migration to reduce active VM count. Strategies involved modular watchdogs and Pearson correlation checks. [Notes - Long Version.pdf]
-
-% Flow network models enabled scalable concurrent container scheduling with multi-resource awareness and affinity considerations. These models balanced execution speed and resource utilization across up to 5000 machines. [Notes - Long Version.pdf]
-
-% Focus shifted to application-layer availability using metrics like MTTF and MTTR. Scheduling considered redundancy, affinity, and anti-affinity rules to ensure SLA compliance during failures. [Notes - Long Version.pdf]
-
-\subsection{Containers Rise}
+\subsection{From Virtual Machines to Containers}
 
 As cloud infrastructures evolve, the shift from VM-based to container-based deployments has become central to achieving energy efficiency and maintaining SLA compliance. Containers offer a lightweight alternative to VMs, reducing overhead and enabling more flexible resource allocation\cite{alahmad_availability-aware_2018}. Early container-based systems focused on reducing active VM counts through migration techniques—employing modular watchdogs and Pearson correlation checks to optimize resource usage\cite{alahmad_availability-aware_2018}.
 
