@@ -21,13 +21,23 @@ accelerated using the Fast Fourier Transform to mitigate GPR's computational com
 Additionally, a convex optimization-based migration strategy was employed.
 These enhancements resulted in a 35\% energy efficiency improvement over heuristic methods, with only a 15\% latency tradeoff.
 
+% \subsection{Containers Rise}
+% Containers began replacing VMs for lightweight virtualization. Initial efforts focused on container migration to reduce active VM count. Strategies involved modular watchdogs and Pearson correlation checks. [Notes - Long Version.pdf]
+
+% Flow network models enabled scalable concurrent container scheduling with multi-resource awareness and affinity considerations. These models balanced execution speed and resource utilization across up to 5000 machines. [Notes - Long Version.pdf]
+
+% Focus shifted to application-layer availability using metrics like MTTF and MTTR. Scheduling considered redundancy, affinity, and anti-affinity rules to ensure SLA compliance during failures. [Notes - Long Version.pdf]
+
 \subsection{Containers Rise}
-Containers began replacing VMs for lightweight virtualization. Initial efforts focused on container migration to reduce active VM count. Strategies involved modular watchdogs and Pearson correlation checks. [Notes - Long Version.pdf]
 
-Flow network models enabled scalable concurrent container scheduling with multi-resource awareness and affinity considerations. These models balanced execution speed and resource utilization across up to 5000 machines. [Notes - Long Version.pdf]
+As cloud infrastructures evolve, the shift from VM-based to container-based deployments has become central to achieving energy efficiency and maintaining SLA compliance. Containers offer a lightweight alternative to VMs, reducing overhead and enabling more flexible resource allocation\cite{alahmad_availability-aware_2018}. Early container-based systems focused on reducing active VM counts through migration techniques—employing modular watchdogs and Pearson correlation checks to optimize resource usage\cite{alahmad_availability-aware_2018}.
 
+Subsequent research advanced container scheduling by using flow network models to frame the allocation problem as a minimum cost flow problem. This approach effectively balances multi-resource constraints (e.g., CPU and memory) and has proven scalable in simulations involving up to 5000 machines\cite{hu_concurrent_2020}. 
 
-Focus shifted to application-layer availability using metrics like MTTF and MTTR. Scheduling considered redundancy, affinity, and anti-affinity rules to ensure SLA compliance during failures. [Notes - Long Version.pdf]
+More recent hybrid methods, which combine evolved rules from genetic programming with human-designed heuristics, address the two-level allocation challenge (assigning containers to VMs and VMs to physical machines). These techniques not only enhance energy efficiency but also improve fault tolerance by incorporating reliability metrics such as Mean Time To Failure (MTTF) and Mean Time To Repair (MTTR)\cite{tan_hybrid_2019, alahmad_availability-aware_2018}. Complementary studies, such as those by Kumar et al.\cite{kumar_renewable_2019} and Shi et al.\cite{shi_energy-aware_2018}, further demonstrate that container-based approaches can significantly reduce energy consumption and improve overall system performance.
+
+This evolution—from basic migration techniques to advanced, hybrid scheduling—forms a critical foundation for the energy optimization and resilience strategies.
+
 
 \end{multicols}
 
