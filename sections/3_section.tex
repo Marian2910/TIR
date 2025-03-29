@@ -7,14 +7,13 @@
 {\color{gray}\hrule}
 \begin{multicols}{2}
 \subsection{Early approaches}
-Early approaches date all the way back to 2010, with Docker being released in 2013. In 2006 the cost of electricity consumed by IT infrastructures in the US was estimated as 4.5 billion dollars and tends to double by 2011\cite{beloglazov_energy_2010}.
-During the first attempts in \cite{beloglazov_energy_2010}, a simple Bin Packing variation with DVFS enabled was chosen to solve this problem. The results, obtained using CloudSim enviroment, showed  gain 83\% compared to no policy with a SLA violation of 1.1\% which represented the beginning of the research on this topic.
+Early approaches date back to 2010, with Docker being released in 2013. In 2006, the cost of electricity consumed by IT infrastructures in the US was estimated at 4.5 billion dollars and was projected to double by 2011 \cite{beloglazov_energy_2010}.
 
-After that in 2015, they shifted toward predictive modeling to address the limitations of static thresholds, in this paper \cite{dabbagh_energy-efficient_2015},
-they proposed a Wiener filter-based predictor to estimate cluster workloads, combined with Best Fit Decreasing for PM allocation. Which showed an improved energy consumption as high as 33\% more from the heuristic approach. 
-Then in 2017, not so long after, which shows how fast at the time the research was in, further improvement were made to the predictive Methods, in this \cite{bui_energy_2017},
-they goes beyond what we're made before with Gaussian Process Regression, for non-stationary workload prediction, accelerated via Fast Fourier Transform to reduce complexity that GPR was lacking, plus a convex optimization-based migration. With this model they improved the energy consumption even higher, 35\% more energy consumption compared to the heuristic approach, while the latency stays low with a 15\% latency tradeoff.
+In the initial attempts described in \cite{beloglazov_energy_2010}, a simple Bin Packing variation with DVFS enabled was used to address this problem. The results, obtained using the CloudSim environment, showed an energy savings gain of 83\% compared to no policy, with an SLA violation of 1.1\%. This marked the beginning of research in this area.
 
+In 2015, researchers shifted toward predictive modeling to address the limitations of static thresholds. Dabbagh et al. \cite{dabbagh_energy-efficient_2015} proposed a Wiener filter-based predictor to estimate cluster workloads, combined with Best Fit Decreasing for PM allocation. Their approach improved energy efficiency by up to 33\% compared to heuristic-based methods.
+
+Then, in 2017, further improvements were made to predictive methods, demonstrating the rapid progress in this field. Bui et al. \cite{bui_energy_2017} advanced previous work by employing Gaussian Process Regression (GPR) for non-stationary workload prediction, accelerated using Fast Fourier Transform to address the computational complexity of GPR. Additionally, they integrated convex optimization-based migration. Their model achieved an even higher energy efficiency improvement—35\% compared to heuristic approaches—while maintaining low latency, with only a 15\% latency tradeoff.
 
 \subsection{Containers Rise}
 Containers began replacing VMs for lightweight virtualization. Initial efforts focused on container migration to reduce active VM count. Strategies involved modular watchdogs and Pearson correlation checks. [Notes - Long Version.pdf]
