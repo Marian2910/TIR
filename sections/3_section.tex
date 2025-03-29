@@ -11,8 +11,15 @@ Early approaches date back to 2010, with Docker being released in 2013. In 2006,
 
 In the initial attempts described in \cite{beloglazov_energy_2010}, a simple Bin Packing variation with DVFS enabled was used to address this problem. The results, obtained using the CloudSim environment, showed an energy savings gain of 83\% compared to no policy, with an SLA violation of 1.1\%. This marked the beginning of research in this area.
 
-By 2015, researchers shifted toward predictive modeling to overcome the limitations of static thresholds. In \cite{dabbagh_energy-efficient_2015}, a Wiener filter-based predictor was introduced to estimate cluster workloads, combined with Best Fit Decreasing for physical machine (PM) allocation. This approach improved energy efficiency by up to 33\% compared to heuristic methods.
-Shortly after, in 2017, further improvements were made to predictive models \cite{bui_energy_2017}. This work extended previous research by incorporating Gaussian Process Regression (GPR) for non-stationary workload prediction, accelerated using the Fast Fourier Transform (FFT) to mitigate GPR's computational complexity. Additionally, a convex optimization-based migration strategy was employed. These enhancements resulted in a 35\% energy efficiency improvement over heuristic methods, with only a 15\% latency tradeoff.
+By 2015, researchers shifted toward predictive modeling to overcome the limitations of static thresholds. In \cite{dabbagh_energy-efficient_2015},
+a Wiener filter-based predictor was introduced to estimate cluster workloads, 
+combined with Best Fit Decreasing for physical machine allocation.
+This approach improved energy efficiency by up to 33\% compared to heuristic methods.
+Shortly after, in 2017, further improvements were made to predictive models \cite{bui_energy_2017}.
+This work extended previous research by incorporating Gaussian Process Regression (GPR) for non-stationary workload prediction,
+accelerated using the Fast Fourier Transform to mitigate GPR's computational complexity.
+Additionally, a convex optimization-based migration strategy was employed.
+These enhancements resulted in a 35\% energy efficiency improvement over heuristic methods, with only a 15\% latency tradeoff.
 
 \subsection{Containers Rise}
 Containers began replacing VMs for lightweight virtualization. Initial efforts focused on container migration to reduce active VM count. Strategies involved modular watchdogs and Pearson correlation checks. [Notes - Long Version.pdf]
