@@ -6,7 +6,7 @@
 \end{center}
 {\color{gray}\hrule}
 \begin{multicols}{2}
-The research process began by defining our scope together with our supervisor, Professor Pierson. We focused on creating a state-of-the-art review addressing energy consumption optimization within Container and Cloud Computing.
+The research process began by defining our scope together with our supervisor, Professor Jean-Marc Pierson. We focused on creating a state-of-the-art review addressing energy consumption optimization within Container and Cloud Computing.
 
 Initially, we defined a structured "Search Pipeline" illustrated in Figure~\ref{fig:search_pipeline}, ensuring systematic identification and evaluation of relevant papers.
 
@@ -74,6 +74,7 @@ Docker Awareness \\
 The classification categories are defined as follows:
 
 \begin{itemize}
+  \small
   \item \textbf{Scheduling Scope}
     \begin{itemize}
       \item \textbf{Online}: Decisions at runtime.
@@ -115,20 +116,25 @@ Finally, Tables~\ref{tab:technical_papers} and \ref{tab:surveys} summarize our c
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=\linewidth]{Trend_Analysis.jpeg}
+    \includegraphics[width=1\linewidth]{Trend_Analysis.jpeg}
     \caption{Trend Analysis}
     \label{fig:trend_analysis}
 \end{figure}
 
 \end{multicols}
 
-\begin{table}[H]
-\centering
-\footnotesize
-\begin{tabular}{|p{3.8cm}|p{2.3cm}|p{1.6cm}|p{2.3cm}|p{2.2cm}|p{2cm}|}
+\begin{footnotesize}
+\begin{longtable}{|p{3.8cm}|p{2.3cm}|p{1.6cm}|p{2.3cm}|p{2.2cm}|p{2cm}|}
 \hline
 \textbf{Paper Ref.} & \textbf{Optimization Technique} & \textbf{Target Level} & \textbf{Scheduling Scope} & \textbf{Energy Strategy} & \textbf{Docker Awareness} \\
 \hline
+\endfirsthead
+
+\hline
+\textbf{Paper Ref.} & \textbf{Optimization Technique} & \textbf{Target Level} & \textbf{Scheduling Scope} & \textbf{Energy Strategy} & \textbf{Docker Awareness} \\
+\hline
+\endhead
+
 Availability-Aware Scheduler\cite{alahmad_availability-aware_2018} (2018) & Greedy & Container, VM & Offline & Availability & Mature Docker\\
 \hline
 Renewable-Aware Scheduling\cite{kumar_renewable_2019} (2019)& Greedy & Container, VM & Reactive & Consolidation & Mature Docker \\
@@ -155,11 +161,10 @@ GPR + Convex VM Planning\cite{bui_energy_2017} (2017) & Model-Based & VM, PM & P
 \hline
 SLA-Aware Consolidation\cite{li_sla-aware_2018} (2018) & Model-Based & VM, PM & Predictive & Consolidation & Mature Docker \\
 \hline
-\end{tabular}
 \caption{Classification of Technical Papers on Energy-Aware Scheduling}
 \label{tab:technical_papers}
-\end{table}
-
+\end{longtable}
+\end{footnotesize}
 
 \begin{table}[H]
 \centering
@@ -168,15 +173,15 @@ SLA-Aware Consolidation\cite{li_sla-aware_2018} (2018) & Model-Based & VM, PM & 
 \hline
 \textbf{Paper Ref.} & \textbf{Type} & \textbf{Scope / Focus} \\
 \hline
-\cite{hameed_survey_2016} Survey on Energy-Aware Scheduling & Survey & Overview of VM and container-level techniques \\
+Survey on Energy-Aware Scheduling\cite{hameed_survey_2016}  & Survey & Overview of VM and container-level techniques \\
 \hline
-\cite{masanet_2020} Global Energy Estimates & Analysis & Environmental impact of data centers \\
+Global Energy Estimates\cite{masanet_2020} & Analysis & Environmental impact of data centers \\
 \hline
-\cite{hintemann_2022} Cloud Impact on Energy & Report & Energy use in European data centers \\
+Cloud Impact on Energy\cite{hintemann_2022} & Report & Energy use in European data centers \\
 \hline
-\cite{IEADataCentres} IEA Report on Data Centers & Report & Global energy trends in ICT and data centers \\
+IEA Report on Data Centers\cite{IEADataCentres} & Report & Global energy trends in ICT and data centers \\
 \hline
-\cite{avgerinou_trends_2017} EU Data Center Energy Trends & Analysis & EU-level trends in ICT energy consumption \\
+EU Data Center Energy Trends\cite{avgerinou_trends_2017} & Analysis & EU-level trends in ICT energy consumption \\
 \hline
 \end{tabular}
 \caption{Survey and Analysis Papers}

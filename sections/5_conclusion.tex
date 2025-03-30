@@ -5,4 +5,13 @@
 \end{center}
 {\color{gray}\hrule}
 \vspace{0.5cm}
-\textbf{HERE WE SHOULD COMPARE THE DIFFERENT APPROACHES AND CHOOSE WINNERS(?)}
+
+\begin{multicols}{2}
+Energy consumption optimization in container-based cloud environments has evolved from early heuristic methods to sophisticated, predictive, and container-aware scheduling approaches. Early consolidation techniques demonstrated significant energy savings through aggressive host shutdown and DVFS, but their reliance on static thresholds often limited adaptability under dynamic workloads\cite{carrega_energy-aware_2017}. In contrast, predictive algorithms that incorporate workload forecasting and dynamic resource allocation have achieved further energy reductions (typically 30--35\%) while balancing the trade-off between energy savings and service quality\cite{dabbagh_energy-efficient_2015,bui_energy_2017}.
+
+The transition from VM-based to container-based solutions has enabled finer-grained resource management, with approaches such as flow-network optimization for container placement proving effective even in large-scale simulations\cite{hu_concurrent_2020}. Additionally, strategies like brownout scheduling\cite{xu_energy_2016} and meta-heuristic or AI-driven methods\cite{tan_hybrid_2019,shi_energy-aware_2018} have shown promise in achieving global optimization over complex infrastructures, albeit with increased computational overhead.
+
+A key insight from the surveyed literature is that no single method outperforms all others under every scenario; instead, each approach excels in specific operational contexts. For instance, consolidation-focused strategies yield high energy savings but require careful management to avoid SLA violations, whereas QoS-aware methods maintain performance at the expense of some energy efficiency\cite{li_sla-aware_2018}. Moreover, the emerging integration of renewable energy awareness into scheduling algorithms\cite{kumar_renewable_2019} points toward a future where energy management is not only efficient but also environmentally sustainable.
+
+Looking ahead, future research should aim to integrate these diverse techniques into hybrid frameworks that combine predictive scheduling, dynamic consolidation, and real-time QoS monitoring. This integration, alongside the continued evolution of container orchestration platforms, is essential for achieving the dual goals of operational efficiency and sustainable cloud computing.
+\end{multicols}
