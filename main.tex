@@ -3,6 +3,7 @@
 % Version 2.21 of 2022/01/12
 %
 \documentclass[runningheads]{llncs}
+\usepackage{cite}
 
 \usepackage{float}
 %
@@ -11,7 +12,7 @@
 % so please use T1 fonts in your manuscript whenever possible.
 % Other font encondings may result in incorrect characters.
 %
-\usepackage[super, square]{natbib}
+% \usepackage[super, square]{natbib}
 
 \usepackage[dvipsnames]{xcolor}
 \usepackage{hyperref}
@@ -61,7 +62,6 @@ Growing demand for cloud services has shifted data center design from performanc
 \end{abstract}
 
 \section{Introduction}
-
 \subsection{From Monoliths to Containers: Energy Implications}
 Cloud computing evolved to support scalable platform usage, moving from single-file applications to client/server 
 architectures with monolithic backends, then to microservices with containers, and now transitioning to micro-frontends. 
@@ -77,8 +77,10 @@ critical concern, especially as cloud data centers now account for approximately
 electricity use\cite{IEADataCentres}. Despite efficiency improvements, the demand for digital 
 services continues to grow, pushing the need for more sustainable solutions.
 
-\subsection{Evolution of Research in Energy-Aware Containerized Cloud Environments}
-Early research focused on heuristic-based approaches to optimize virtual machine (VM) placement, achieving 
+\subsection{Energy-Aware Containerized Cloud Environments}
+As energy consumption in cloud infrastructures continues to rise, optimizing energy efficiency through 
+containerized environments has become increasingly important. Early research focused on heuristic-based 
+approaches to optimize virtual machine (VM) placement, achieving 
 energy savings of up to 83\% while maintaining only a 1.1\% service level agreement (SLA) violation 
 rate\cite{beloglazov_energy_2010}. More recently, research has shifted from VM-based allocation towards 
 containerized environments, where energy efficiency is influenced by scheduling strategies, workload 
@@ -377,7 +379,7 @@ SLA-Aware Consolidation \cite{li_sla-aware_2018} (2018) & CloudSim & 2 & 4 & 116
 
 We visualized the simulation environments used in each paper over time to observe how they have evolved (Figure~\ref{fig:timeline}). Each point corresponds to a paper, placed according to its publication year and the simulation platform it utilized (CloudSim, ExoGENI, LEGIS, or ``Nm'' if not mentioned) Each point denotes a paper, positioned by its publication year and the simulation platform it utilized.
 
-\begin{figure}[H]
+\begin{figure}[htbp]
     \centering
     \includegraphics[width=0.7\columnwidth]{Timeline.png}
     \caption{Timeline of simulation environments used in each paper (2010--2020). }
@@ -388,7 +390,7 @@ Additionally, we plotted the relationship between the number of CPU cores and th
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.75\columnwidth]{Energy.png}
+    \includegraphics[width=0.8\columnwidth]{Energy.png}
     \caption{2D Scatter Plot: CPU cores vs. Energy Delta $(P_{\max} - P_{\begin{footnotesize}idle\end{footnotesize}})$.}
     \label{fig:energy_delta}
 \end{figure}
@@ -404,6 +406,6 @@ A key insight from the surveyed literature is that no single method outperforms 
 Looking ahead, future research should aim to integrate these diverse techniques into hybrid frameworks that combine predictive scheduling, dynamic consolidation, and real-time QoS monitoring. This integration, alongside the continued evolution of container orchestration platforms, is essential for achieving the dual goals of operational efficiency and sustainable cloud computing.
 
 \bibliographystyle{splncs04}
-\bibliography{mybibliography}
+\bibliography{references}
 
 \end{document}
